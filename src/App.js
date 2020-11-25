@@ -8,7 +8,6 @@ import { Signup } from './pages/Signup/Signup';
 function App() {
   return (
     <div className="App">
-      <h1>Vision task</h1>
       <Route exact path="/" render={() => <Main />} />
       <Route path="/signup" render={() => <Signup />} />
       <Route path="/login" render={() => <Login />} />

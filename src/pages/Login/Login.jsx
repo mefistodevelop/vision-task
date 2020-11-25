@@ -1,7 +1,12 @@
 import React from 'react';
+import './Login.css';
+import { LoginForm } from './LoginForm/LoginForm';
 
-export const Login = () => (
-  <div className="login">
-    <h1>Login page</h1>
-  </div>
-);
+export function Login() {
+  return (
+    <div className="login">
+      <h1 className="login__title">Login</h1>
+      <LoginForm />
+    </div>
+  );
+}
