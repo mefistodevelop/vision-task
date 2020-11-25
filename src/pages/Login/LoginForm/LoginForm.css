@@ -1,3 +1,11 @@
+.login-form__label {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 .login-form__field {
   margin-bottom: 10px;
   width: 100%;

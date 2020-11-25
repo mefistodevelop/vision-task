@@ -30,11 +30,11 @@ export function LoginForm() {
   return (
     <form className="login-form" onSubmit={handleSubmit}>
       <label className="login-form__label">
+        username
         <input
           className="login-form__field"
           type="text"
           name="username"
-          placeholder="username"
           value={username}
           onChange={handleUsername}
           required
@@ -43,11 +43,11 @@ export function LoginForm() {
       </label>
 
       <label className="login-form__label">
+        password
         <input
           className="login-form__field"
           type="password"
           name="password"
-          placeholder="password"
           value={password}
           onChange={handlePassword}
           required
