@@ -1,0 +1,36 @@
+.signup-form__label {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.signup-form__label_small {
+  max-width: 160px;
+  margin-right: 10px;
+}
+
+.signup-form__label_small:last-of-type {
+  margin-right: 0;
+}
+
+.signup-form__field {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 320px;
+  height: 44px;
+  padding: 12px 15px;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+}
+
+.signup-form__field:last-of-type {
+  margin-bottom: 20px;
+}
+
+.signup-form__fieldgroup {
+  display: flex;
+}
