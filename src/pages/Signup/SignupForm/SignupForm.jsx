@@ -49,8 +49,8 @@ export function SignupForm() {
       user: { email, password },
       invited_by: inviteCode,
       country_key: countryKey,
+      phone: '+79991234567',
     };
-
     const response = await registerNewUser(data);
     setRedirect(response);
   };
