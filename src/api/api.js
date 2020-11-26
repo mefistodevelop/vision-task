@@ -9,7 +9,7 @@ export const userApi = {
     return instance.post('create/', payload);
   },
   signin(payload) {
-    return instance.post('token', payload);
+    return instance.post('token/', payload);
   },
   refreshToken(payload) {
     return instance.post('token/refresh/', payload);
