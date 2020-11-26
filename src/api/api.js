@@ -6,17 +6,15 @@ const instance = axios.create({
 
 export const userApi = {
   signup(payload) {
-    return instance.post('create/', payload).then((response) => response.data);
+    return instance.post('create/', payload);
   },
   signin(payload) {
-    return instance.post('token', payload).then((response) => response.data);
+    return instance.post('token', payload);
   },
   refreshToken(payload) {
-    return instance
-      .post('token/refresh/', payload)
-      .then((response) => response.data);
+    return instance.post('token/refresh/', payload);
   },
   getData(id) {
-    return instance.get(id).then((response) => response.data);
+    return instance.get(id);
   },
 };
