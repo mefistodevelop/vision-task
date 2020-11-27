@@ -10,7 +10,7 @@ import whatsapp from './images/whatsapp.svg';
 
 export function Profile() {
   const isAuthorized = useSelector((state) => state.isAuthorized);
-  const userId = useSelector((state) => state.clientId);
+  const userId = localStorage.getItem('clientId');
   const dispatch = useDispatch();
 
   const userData = useSelector((state) => state.userData);
@@ -20,7 +20,6 @@ export function Profile() {
   const birthday = userData.birth_date;
   const email = userData.email;
   const phone = userData.phone;
-
   useEffect(() => {
     dispatch(getUserData(userId));
   }, []);

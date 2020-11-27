@@ -30,10 +30,6 @@ export function LoginForm() {
       dispatch(
         loginUser({ username: trimmedUsername, password: trimmedPassword })
       );
-      // localStorage.setItem('username', trimmedUsername);
-      // localStorage.setItem('password', trimmedPassword);
-      // setUsername('');
-      // setPassword('');
     }
   };
   return (

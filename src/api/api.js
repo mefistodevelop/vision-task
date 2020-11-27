@@ -14,6 +14,7 @@ export const userApi = {
   refreshToken(payload) {
     return instance.post('token/refresh/', payload).then((response) => {
       localStorage.setItem('accessToken', response.data.access);
+      window.location = '/';
     });
   },
   getData(id) {
@@ -40,18 +41,16 @@ instance.interceptors.response.use(
   },
   (error) => {
     if (error.response.status === 401) {
-      debugger;
       const refreshToken = localStorage.getItem('refreshToken');
       try {
         return userApi.refreshToken({ refresh: refreshToken });
       } catch (err) {
         localStorage.clear();
+        window.location = '/login';
         return new Promise((resolve, reject) => {
           reject(error);
         });
       }
     }
-
-    return new Promise((resolve, reject) => reject(error));
   }
 );

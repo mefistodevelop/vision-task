@@ -71,7 +71,6 @@ export const loginUser = (payload) => async (dispatch) => {
       localStorage.setItem('accessToken', accessToken);
       localStorage.setItem('refreshToken', refreshToken);
 
-      dispatch(setClientId(clientId));
       dispatch(setIsAuthorized(true));
     }
   } catch (error) {
@@ -85,10 +84,10 @@ export const getUserData = (id) => async (dispatch) => {
     response = await userApi.getData(id);
     if (response.status === 200) {
       dispatch(setUserData(response.data));
+      dispatch(setIsAuthorized(true));
     }
-    console.log(response.data);
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 };
 
