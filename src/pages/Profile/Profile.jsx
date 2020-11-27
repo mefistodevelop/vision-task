@@ -20,6 +20,7 @@ export function Profile() {
   const birthday = userData.birth_date;
   const email = userData.email;
   const phone = userData.phone;
+
   useEffect(() => {
     dispatch(getUserData(userId));
   }, []);

@@ -1,10 +1,7 @@
 import { userApi } from '../api/api';
 
 const SET_IS_AUTHORIZED = 'SET_IS_AUTHORIZED';
-const SET_IS_FETCHING = 'SET_IS_FETCHING';
-const SET_CLIENT_ID = 'SET_CLIENT_ID';
 const SET_USER_DATA = 'SET_USER_DATA';
-const LOGOUT = 'LOGOUT';
 
 const initialState = {
   isAuthorized: false,
@@ -18,17 +15,8 @@ export const reducer = (state = initialState, action) => {
     case SET_IS_AUTHORIZED:
       return { ...state, isAuthorized: action.payload };
 
-    case SET_IS_FETCHING:
-      return { ...state, isFetching: action.payload };
-
-    case SET_CLIENT_ID:
-      return { ...state, clientId: action.payload };
-
     case SET_USER_DATA:
       return { ...state, userData: action.payload };
-
-    case LOGOUT:
-      return { ...state, userData: {}, clientId: null, isAuthorized: false };
 
     default:
       return state;
@@ -36,10 +24,7 @@ export const reducer = (state = initialState, action) => {
 };
 
 const setIsAuthorized = (payload) => ({ payload, type: SET_IS_AUTHORIZED });
-const setIsFetching = (payload) => ({ payload, type: SET_IS_FETCHING });
-const setClientId = (payload) => ({ payload, type: SET_CLIENT_ID });
 const setUserData = (payload) => ({ payload, type: SET_USER_DATA });
-const logout = () => ({ type: LOGOUT });
 
 export const registerNewUser = async (data) => {
   let response;
@@ -58,9 +43,7 @@ export const registerNewUser = async (data) => {
 export const loginUser = (payload) => async (dispatch) => {
   let response;
   try {
-    dispatch(setIsFetching(true));
     response = await userApi.signin(payload);
-    dispatch(setIsFetching(false));
 
     if (response.status === 200) {
       const clientId = response.data['client_id'];
@@ -89,9 +72,4 @@ export const getUserData = (id) => async (dispatch) => {
   } catch (error) {
     console.error(error);
   }
-};
-
-export const logoutUser = (dispatch) => {
-  localStorage.clear();
-  dispatch(logout());
 };
