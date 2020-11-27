@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/vision-task/static/css/main.9fdd06be.chunk.css",
-    "main.js": "/vision-task/static/js/main.bc357827.chunk.js",
-    "main.js.map": "/vision-task/static/js/main.bc357827.chunk.js.map",
+    "main.css": "/vision-task/static/css/main.c28c379b.chunk.css",
+    "main.js": "/vision-task/static/js/main.431f9a71.chunk.js",
+    "main.js.map": "/vision-task/static/js/main.431f9a71.chunk.js.map",
     "runtime-main.js": "/vision-task/static/js/runtime-main.9c090635.js",
     "runtime-main.js.map": "/vision-task/static/js/runtime-main.9c090635.js.map",
     "static/js/2.9e72bf95.chunk.js": "/vision-task/static/js/2.9e72bf95.chunk.js",
     "static/js/2.9e72bf95.chunk.js.map": "/vision-task/static/js/2.9e72bf95.chunk.js.map",
     "index.html": "/vision-task/index.html",
-    "static/css/main.9fdd06be.chunk.css.map": "/vision-task/static/css/main.9fdd06be.chunk.css.map",
+    "static/css/main.c28c379b.chunk.css.map": "/vision-task/static/css/main.c28c379b.chunk.css.map",
     "static/js/2.9e72bf95.chunk.js.LICENSE.txt": "/vision-task/static/js/2.9e72bf95.chunk.js.LICENSE.txt",
     "static/media/instagram.d37acdd3.svg": "/vision-task/static/media/instagram.d37acdd3.svg",
     "static/media/telegram.86fe8f60.svg": "/vision-task/static/media/telegram.86fe8f60.svg",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.9c090635.js",
     "static/js/2.9e72bf95.chunk.js",
-    "static/css/main.9fdd06be.chunk.css",
-    "static/js/main.bc357827.chunk.js"
+    "static/css/main.c28c379b.chunk.css",
+    "static/js/main.431f9a71.chunk.js"
   ]
 }
