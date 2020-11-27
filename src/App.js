@@ -15,9 +15,11 @@ function App() {
           HOME
         </NavLink>
       </header>
-      <Route exact path="/" render={() => <Profile />} />
-      <Route path="/signup" render={() => <Signup />} />
-      <Route path="/login" render={() => <Login />} />
+      <main className="App__content">
+        <Route exact path="/" render={() => <Profile />} />
+        <Route path="/signup" render={() => <Signup />} />
+        <Route path="/login" render={() => <Login />} />
+      </main>
     </div>
   );
 }
