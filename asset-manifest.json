@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vision-task/static/css/main.9fdd06be.chunk.css",
-    "main.js": "/vision-task/static/js/main.c0b96ba9.chunk.js",
-    "main.js.map": "/vision-task/static/js/main.c0b96ba9.chunk.js.map",
+    "main.js": "/vision-task/static/js/main.bc357827.chunk.js",
+    "main.js.map": "/vision-task/static/js/main.bc357827.chunk.js.map",
     "runtime-main.js": "/vision-task/static/js/runtime-main.9c090635.js",
     "runtime-main.js.map": "/vision-task/static/js/runtime-main.9c090635.js.map",
     "static/js/2.9e72bf95.chunk.js": "/vision-task/static/js/2.9e72bf95.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.9c090635.js",
     "static/js/2.9e72bf95.chunk.js",
     "static/css/main.9fdd06be.chunk.css",
-    "static/js/main.c0b96ba9.chunk.js"
+    "static/js/main.bc357827.chunk.js"
   ]
 }
