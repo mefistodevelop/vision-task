@@ -1,14 +1,21 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 import './App.css';
 import { Login } from './pages/Login/Login';
-import { Main } from './pages/Main/Main';
 import { Signup } from './pages/Signup/Signup';
+import { Profile } from './pages/Profile/Profile';
 
 function App() {
   return (
     <div className="App">
-      <Route exact path="/" render={() => <Main />} />
+      <header>
+        <NavLink to="/login">login</NavLink>
+        <NavLink to="/signup">Signup</NavLink>
+        <NavLink exact to="/">
+          HOME
+        </NavLink>
+      </header>
+      <Route exact path="/" render={() => <Profile />} />
       <Route path="/signup" render={() => <Signup />} />
       <Route path="/login" render={() => <Login />} />
     </div>
